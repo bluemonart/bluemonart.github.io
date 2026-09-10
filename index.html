@@ -1,15 +1,126 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>DigiBara</title>
-  <!-- meta de verificación Exo si te la pidieron -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DigiBara – Adult HTML5 Game</title>
+  <meta name="description" content="DigiBara is an 18+ adult management and simulation game. Take care of characters, manage rooms and production.">
+  <style>
+    :root {
+      --bg: #3f2832;
+      --panel: rgba(63, 40, 50, 0.96);
+      --sub: #533c46;
+      --text: #ffffff;
+      --muted: rgba(255,255,255,0.72);
+      --link: #e53b44;
+      --border: #694957;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      color: var(--text);
+      font-family: Lato, Segoe UI, sans-serif;
+      background: var(--bg) url("https://img.itch.zone/aW1nLzI5MzUzNjU3LmpwZw==/original/xPdUKf.jpg") center top / cover fixed;
+      line-height: 1.55;
+    }
+    .wrap {
+      max-width: 880px;
+      margin: 32px auto;
+      padding: 28px 28px 48px;
+      background: var(--panel);
+      border: 1px solid var(--border);
+    }
+    h1, h2 { margin: 0 0 12px; font-weight: 800; }
+    h1 { font-size: 2rem; text-align: center; }
+    h2 { margin-top: 28px; font-size: 1.2rem; }
+    p, li { color: var(--muted); }
+    a { color: var(--link); }
+    .banner {
+      display: block;
+      max-width: 100%;
+      margin: 0 auto 16px;
+    }
+    .age { text-align: center; color: #ffb4b8; font-weight: 700; }
+    .btn {
+      display: inline-block;
+      margin: 6px 8px 6px 0;
+      padding: 10px 16px;
+      background: var(--link);
+      color: #fff !important;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: 700;
+    }
+    iframe {
+      width: 100%;
+      max-width: 640px;
+      height: 380px;
+      border: 0;
+      background: var(--sub);
+    }
+    .embed { text-align: center; }
+    hr { border: 0; height: 1px; background: var(--border); margin: 24px 0; }
+    footer { margin-top: 36px; font-size: 0.9rem; color: var(--muted); }
+  </style>
 </head>
 <body>
-  <h1>DigiBara</h1>
-  <p>Adult 18+ HTML5 game. Idle / management. Official site.</p>
-  <p><a href="play.html">Play here</a></p>
-  <p><a href="https://thebluemon.itch.io/digibara">Play on itch.io</a></p>
-  <p>Contact: tu email</p>
+  <main class="wrap">
+    <img class="banner" alt="DigiBara" src="https://img.itch.zone/aW1nLzI5MzUzNDY0LmdpZg==/original/FKx2sY.gif">
+    <h1>DigiBara</h1>
+    <p class="age">18+ only. Adult game.</p>
+
+    <p>
+      <a class="btn" href="play.html">Play on this site</a>
+      <a class="btn" href="https://thebluemon.itch.io/digibara">Official itch.io page</a>
+      <a class="btn" href="https://www.patreon.com/thebluemon">Patreon</a>
+    </p>
+
+    <h2>About</h2>
+    <p><strong>DigiBara</strong> is an adult management and simulation game. You take care of different characters across multiple rooms, manage their needs, produce resources and unlock content as you progress.</p>
+
+    <h2>Play in browser</h2>
+    <div class="embed">
+      <iframe
+        src="https://itch.io/embed-upload/18921472?color=3f2832"
+        allowfullscreen
+        title="DigiBara web demo"></iframe>
+    </div>
+
+    <h2>Features</h2>
+    <ul>
+      <li>Multiple characters with unique stats</li>
+      <li>Room management</li>
+      <li>Production mechanics</li>
+      <li>Equipment and modules</li>
+      <li>Save system (browser cache / export)</li>
+      <li>Regular updates</li>
+    </ul>
+
+    <h2>Status</h2>
+    <p>The game is in <strong>Beta</strong>. Features and fixes are added often.</p>
+
+    <h2>Guides</h2>
+    <ul>
+      <li><a href="https://docs.google.com/document/d/13u6y_Xj_gc2_OFwHLrOvELO_1sfspUn2UiseYScCX6c/edit">Gameplay guide</a></li>
+      <li><a href="https://docs.google.com/document/d/13u6y_Xj_gc2_OFwHLrOvELO_1sfspUn2UiseYScCX6c">Custom character import guide</a></li>
+    </ul>
+
+    <h2>Support</h2>
+    <p>Windows and Android builds are on the Patreon-linked itch pages.</p>
+    <ul>
+      <li>Email: <a href="mailto:bluemonart@gmail.com">bluemonart@gmail.com</a></li>
+      <li>Discord: @thebluemon</li>
+      <li><a href="https://discord.com/invite/RMxRbxh6kV">Discord server</a></li>
+      <li><a href="https://www.patreon.com/thebluemon">Patreon</a></li>
+    </ul>
+
+    <h2>Privacy</h2>
+    <p>The web version may show optional ads. We do not sell personal data. Save files stay on your device unless you export them.</p>
+
+    <hr>
+    <footer>
+      Official site for DigiBara. Not affiliated with itch.io.
+    </footer>
+  </main>
 </body>
 </html>
