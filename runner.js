@@ -1,1 +1,0 @@
-const loadGame=()=>{let e=document.createElement("script");e.src="DigiBara.js",e.async=0,document.head.appendChild(e)},loadSW=async()=>{try{await navigator.serviceWorker.register("sw.js"),await navigator.serviceWorker.ready,loadGame()}catch(e){console.error(e),loadGame()}};"serviceWorker"in navigator&&window.addEventListener("load",loadSW); 
